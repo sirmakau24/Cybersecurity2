@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #101820;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #1a2233;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    border-bottom: 3px solid #00bfae;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #00bfae;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #b0bec5;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.service-section h2 {
+    color: #00bfae;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.tagline {
+    color: #b0bec5;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.offerings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.offering {
+    background: #182233;
+    border-left: 5px solid #00bfae;
+    padding: 1rem 1.2rem;
+    border-radius: 6px;
+    font-size: 1.08rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.offering:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 4px 16px rgba(0,191,174,0.13);
+}
+
+.offering-section {
+    background: #151c28;
+    margin: 1.5rem 0;
+    padding: 1.2rem 1rem;
+    border-radius: 6px;
+    border-left: 4px solid #00bfae;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+
+.offering-section h3 {
+    margin-top: 0;
+    color: #00bfae;
+    font-size: 1.2rem;
+}
+
+.offering-section p {
+    margin-bottom: 0;
+    color: #e0e0e0;
+}
+
+.cta {
+    text-align: center;
+    margin: 2.5rem 0 1rem 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background: #00bfae;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0,191,174,0.13);
+    transition: background 0.2s, transform 0.15s;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #009e8e;
+    transform: translateY(-2px) scale(1.04);
+}
+
+#contact {
+    background: #1a2233;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#contact h3 {
+    color: #00bfae;
+    margin-bottom: 0.5rem;
+}
+
+#contact p {
+    color: #b0bec5;
+    margin: 0.2rem 0;
+}
+
+footer {
+    background: #151c28;
+    color: #b0bec5;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.95rem;
+    margin-top: 2rem;
+    border-top: 2px solid #00bfae;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem 0.5rem;
+    }
+    .offerings-grid {
+        grid-template-columns: 1fr;
+    }
+    .offering-section {
+        padding: 1rem 0.5rem;
+    }
+}
